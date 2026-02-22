@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StreamFlix</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .profile {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        /* Section Title */
+        .section {
+            padding: 20px 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Movie Grid */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        /* Movie Card */
+        .card {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+        }
+
+        .card-title {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">StreamFlix</div>
+        <div class="profile">Welcome, User</div>
+    </div>
+
+    <div class="section">
+        <h2>Trending Now</h2>
+
+        <div class="movie-grid">
+
+            <div class="card">
+                <img src="assests/img/movie1.webp">
+                <div class="card-title">Cyber Heist</div>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/movie2.jpg">
+                <div class="card-title">Dark Protocol</div>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/movie.jpg">
+                <div class="card-title">Hunger Games</div>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/movie4.jpg">
+                <div class="card-title">Network Breach</div>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/movie5.jpg">
+                <div class="card-title">Wednesday Addams</div>
+            </div>
+
+            <div class="card">
+                <img src="assests/img/boxshot.png">
+                <div class="card-title">Stranger Things</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assests/img/bg.jpeg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+
+}
+
+/* main aur main box ki height same  */
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.65;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+}
+
+nav {
+    max-width: 60vw;
+    /* center krny k liye navbar ko */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    /* nav bar ki height */
+}
+
+/* image ki width html me bhi increse kr skty aur css me bhi */
+nav img {
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    /* font-family: 'Segoe UI'; */
+    /* for netflix/pk  they have used seoge ui*/
+    /* height was initially 100% i changed it so the text can be alittle centered */
+    color: white;
+    height: calc(100vh - 82px);
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    gap: 23px;
+
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 42px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    margin: 500;
+    height: 7px;
+    background-color: rgb(50, 49, 49);
+}
+
+.btn {
+    padding: 3px 18px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+
+}
+.btn:hover{
+    background-color: rgb(187, 40, 40);
+}
+.btn-red {
+
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 400;
+}
+.btn-red:hover{
+
+    background-color: rgba(255, 34, 34, 0.783);
+    color: white;
+   
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    /* font-weight: 800; */
+    font-size: 12px;
+    border-radius: 6px;
+    background: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(205, 205, 205, 0.5);
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    border-radius: 6px;
+    font-weight: 400;
+
+
+}
+
+/* 
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 95vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+} */
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; Ensure children are stacked vertically */
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    /* text-align: center; Center-align text within the container */
+    padding: 40px 20px;
+    
+    /* Add some padding for better spacing */
+}
+
+@media screen and (max-width: 500px) {
+    @media screen and (max-width: 1300px) {
+
+        nav{
+            max-width: 90vw;
+        }
+    
+        .first {
+            flex-wrap: wrap;
+        }
+    
+        .secImg img {
+            width: 305px;
+        }
+    
+        .secImg video {
+            width: 305px;
+        }
+
+
+
+        .first.second {
+            flex-wrap: wrap;
+      
+        }
+    
+        .first.second .secImg{
+            width: 305px;
+        }
+    
+        .first.second video {
+            width: 305px;
+        }
+        .first.second .textContainer{
+            flex-wrap: wrap;
+        } .first.second .textContainer > span {
+            width: 100%;
+          }
+
+        .fourth {
+            flex-wrap: wrap;
+        }
+    
+        .fourthImg {
+            width: 305px;
+        }
+        .fourth .textContainer-fourth{
+            text-wrap: wrap;
+        }
+        .first.fourth .textContainer-fourth > span {
+            width: 100%;
+          }
+
+    .image1{
+        width: 305px;
+    }
+    .video1{
+        width: 305px;
+    }
+        .hero> :nth-child(1) {
+            font-size: 32px;
+        }
+    
+        .hero> :nth-child(2) {
+            font-size: 18px;
+        }
+    
+        .hero> :nth-child(3) {
+            font-size: 18px;
+        }
+    
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+    
+        .faq h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+    
+        footer {
+            max-width: 90vw;
+            padding: 75px 0;
+        }
+    
+        .footer-item{
+            align-items: center;
+        }
+     
+    
+    }
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* 
+.secImg {
+    position: relative;
+  
+}
+
+.secImg img {
+    width: 45vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 85px;
+    left: 70px;
+    right: 0;
+} */
+
+/* overflow-clip-margin: content-box; */
+
+.secImg {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.secImg img {
+
+    width: 100%;
+    display: block;
+    position: relative;
+    /* Ensure the image is positioned relatively */
+    z-index: 10;
+    /* Higher z-index to appear above the video */
+}
+
+.secImg video {
+    position: absolute;
+    top: 21%;
+    /* Adjust this value to position the video correctly behind the TV screen */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 73%;
+    /* Adjust the width as needed */
+    z-index: 5;
+    /* Lower z-index to appear behind the image */
+}
+
+.image1 {
+
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 50px;
+    z-index: 10;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* position:absolute ;
+    top: 51px;
+    left: 40px;
+    height: 400px;
+    width: 450px;
+    padding-bottom: 50px; */
+}
+
+.video1 {
+
+    position: absolute;
+    top: 21%;
+    left: 45%;
+    height: 45%;
+    transform: translateX(-50%);
+    width: 45%;
+    z-index: 5;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* height: 170px;
+    width: 220px;
+    position: absolute;
+    padding-right: 50px;
+    padding-left: 140px; */
+}
+
+
+/* .first > div:first-child{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.first > div :nth-child(2){
+    font-size: 24px;
+} */
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    /* align-items: center;  Center children horizontally */
+    gap: 20px;
+
+    padding-top: 34px 0;
+
+    /* Add some space between text elements */
+}
+
+.first>div:nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div> :nth-child(2) {
+    font-size: 18px;
+    font-weight: 10%;
+
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Specific styles for .second section */
+.first.second {
+    display: flex;
+    justify-content: center;
+    /* Center the children horizontally */
+    align-items: center;
+    /* Center the children vertically */
+    flex-direction: row;
+    /* Ensure the image and text are side-by-side */
+    max-width: 80vw;
+    /* Adjust the width as needed */
+    margin: auto;
+    color: white;
+    /* text-align: center; Center the text within its container */
+    padding: 40px 20px;
+    /* Add some padding for better spacing */
+}
+
+.first.second .secImg {
+    flex: 1;
+    /* Allow the image to take up equal space */
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+}
+
+.first.second .textContainer {
+    flex: 1;
+    /* Allow the text container to take up equal space */
+    display: flex;
+    flex-direction: column;
+    /* Stack text vertically */
+    justify-content: center;
+    /* Center the text vertically */
+    align-items: center;
+    /* Center the text horizontally */
+    gap: 20px;
+    /* Add space between text elements */
+}
+
+.first.second .textContainer>span:nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first.second .textContainer>span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 10%;
+    /* Adjust font-weight for slightly bolder text */
+}
+
+
+
+/* --------------------------4th section---------------------------------- */
+
+/* Specific styles for .4th section */
+.fourth {
+    display: flex;
+    justify-content: center;
+    /* Center the children horizontally */
+    align-items: center;
+    /* Center the children vertically */
+    flex-direction: row;
+    /* Ensure the image and text are side-by-side */
+    max-width: 80vw;
+    /* Adjust the width as needed */
+    margin: auto;
+    color: white;
+    /* text-align: center; Center the text within its container */
+    padding: 40px 20px;
+    /* Add some padding for better spacing */
+}
+
+.fourth .fourthImg {
+    flex: 1;
+    /* Allow the image to take up equal space */
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+}
+
+.fourth .textContainer-fourth {
+    flex: 1;
+    /* Allow the text container to take up equal space */
+    display: flex;
+    flex-direction: column;
+    /* Stack text vertically */
+    justify-content: center;
+    /* Center the text vertically */
+    align-items: center;
+    /* Center the text horizontally */
+    gap: 20px;
+    /* Add space between text elements */
+}
+
+.fourth .textContainer-fourth>span:nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.fourth .textContainer-fourth>span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 10%;
+    /* Adjust font-weight for slightly bolder text */
+}
+
+/* --------------------------------faq questions------------------------------------ */
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 34px;
+}
+.acc{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.acc li{
+
+    list-style: none;
+    width: 100%;
+    padding:5px;
+}
+
+.acc li label{
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.acc .content{
+    background:  #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.acc input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.acc input[type="radio"]:checked + label::after{
+    transform:rotate(135deg) ;
+}
+
+
+.acc label:hover{
+    transition: all 1s ease-out;
+    background-color: rgb(77, 82, 80);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------FOOTER--------------------------------------- */
+
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid #333;
+}
+
+.footer div {
+    margin: 10px;
+
+}
+
+.footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .language {
+    display: flex;
+    align-items: center;
+}
+
+.footer .language select {
+    background-color: black;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.footer .location {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    color: #b3b3b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer div {
+        margin: 5px 0;
+    }
+
+    .footer .language {
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer a {
+        margin: 3px 0;
+    }
+
+    .footer .language select {
+        margin-left: 5px;
+        padding: 3px;
+    }
+    .first.second .textContainer > span {
+        font-size: 14px;
+      }
+      .first.fourth .textContainer-fourth > span {
+        font-size: 14px;
+      }
+}
+
+/* ---------------------------------------------------- */
+.small{
+    text-align: center;
+  display: inline-block;
+  color: #ececec;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+}
+.faq-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.faq-buttons input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    /* font-weight: 800; */
+    font-size: 12px;
+    border-radius: 6px;
+    background: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(205, 205, 205, 0.5);
+
+}
+
+
+
